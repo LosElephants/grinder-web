@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/brianvanstone/grinder-data.svg?branch=master)](https://travis-ci.org/brianvanstone/grinder-data)
+[![Build Status](https://travis-ci.org/LosElephants/grinder-web.svg?branch=master)](https://travis-ci.org/LosElephants/grinder-web)
 
 # Project Elephant
 

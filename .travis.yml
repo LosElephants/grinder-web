@@ -27,8 +27,3 @@ deploy:
   local_dir: build
   cache_control: max-age=21600
   region: "$AWS_DEFAULT_REGION"
-after_deploy:
-  # Allow `awscli` to make requests to CloudFront.
-  - aws configure set preview.cloudfront true
-  # Invalidate every object in the targeted distribution.
-  - aws cloudfront create-invalidation --distribution-id $CLOUDFRONT_DIST_ID --paths "/*"

@@ -5,7 +5,7 @@ module.exports.getProfile = (auth, callback) => {
     var options = {
         url: `${process.env.REACT_APP_API_URI}/profile`,
         headers: {
-            'Authorization': auth
+            'Authorization': `Bearer ${auth}`
         }
     };
 

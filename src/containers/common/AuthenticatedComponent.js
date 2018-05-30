@@ -45,7 +45,7 @@ export default class AuthenticatedComponent extends React.Component {
         if (!this.state.profile && this.state.authProfile) {
             Profile.getProfile(auth.getSession().access_token, (err, data) => {
                 if (err) {
-                    console.log("error fetching profile", err);
+                    console.log(`error fetching profile [${auth.getSession().access_token}]`, err);
                 } else {
                     this.setState({ profile: data });
                 }
